@@ -13,9 +13,9 @@ interface Person {
 }
 
 function greeter(person: Person) {
-  return "Hello" + person.firstName + person.lastName;
+  return "Hello" + " " + person.firstName + " " + person.lastName;
 }
 
-let user = { firstName: 'Jane', lastName: 'User' }
+let user = new Student("Jane", "M.", "User")
 
 document.body.textContent = greeter(user)
